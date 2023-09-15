@@ -1,4 +1,4 @@
-package com.example.cocuckeglence
+package com.example.cocuckeglence.ui.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cocuckeglence.ui.view.IcerikActivity
+import com.example.cocuckeglence.R
 import com.example.cocuckeglence.data.entity.Kategoriler
 
 class KategorilerAdapter(private val mContext: Context,
@@ -44,7 +46,7 @@ class KategorilerAdapter(private val mContext: Context,
         //tıklanma özelliğini de bir alt satırda verdik
         holder.kategori_card.setOnClickListener{
             // hangi activitye gitmek istiyorsan onu dıyorsun--> IcerikActivity
-            val intent = Intent(mContext,IcerikActivity::class.java)
+            val intent = Intent(mContext, IcerikActivity::class.java)
             intent.putExtra("kategoriNesne",kategori)
             //intent.putExtra("kategoriNesne",kategori)//veriyi diğer sayfaya göndermeye yarıyor
             mContext.startActivity(intent)// mContext yazmak yerine itemView.context de ayzarsan çalışır. tasarim kullandıgımız yerlerde itemView kullanabilirdik.

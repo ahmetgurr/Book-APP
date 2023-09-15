@@ -1,8 +1,9 @@
-package com.example.cocuckeglence
+package com.example.cocuckeglence.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.cocuckeglence.ui.adapter.IceriklerAdapter
 import com.example.cocuckeglence.data.entity.IcerikDetay
 import com.example.cocuckeglence.data.entity.Icerikler
 import com.example.cocuckeglence.data.entity.Kategoriler

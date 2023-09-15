@@ -1,4 +1,4 @@
-package com.example.cocuckeglence
+package com.example.cocuckeglence.ui.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cocuckeglence.R
+import com.example.cocuckeglence.ui.view.TanitimActivity
 import com.example.cocuckeglence.data.entity.Icerikler
 
 class IceriklerAdapter(private val mContext: Context,
@@ -48,7 +50,7 @@ class IceriklerAdapter(private val mContext: Context,
         holder.imageViewIcerikResim.setImageResource(mContext.resources.getIdentifier(icerik.Icerik_resim,"drawable",mContext.packageName)) //alttaki kodda resimlerin bulundugu kalsorden resimleri çekiyor
         //icerk_card'a tıklanma ozelliği veriyoruz
         holder.icerik_card.setOnClickListener{
-            val intent = Intent(mContext,TanitimActivity::class.java)
+            val intent = Intent(mContext, TanitimActivity::class.java)
             intent.putExtra("masalKitabiIcerik",icerik)
             //intent.putExtra("kategoriNesne",kategori)//veriyi diğer sayfaya göndermeye yarıyor
             mContext.startActivity(intent)

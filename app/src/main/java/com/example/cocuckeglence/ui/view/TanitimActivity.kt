@@ -1,15 +1,10 @@
-package com.example.cocuckeglence
+package com.example.cocuckeglence.ui.view
 
-import android.app.Person
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.TextView
-import com.example.cocuckeglence.data.entity.IcerikDetay
+import com.example.cocuckeglence.R
 import com.example.cocuckeglence.data.entity.Icerikler
-import com.example.cocuckeglence.data.entity.Kategoriler
-import com.example.cocuckeglence.databinding.ActivityIcerikBinding
 import com.example.cocuckeglence.databinding.ActivityTanitimBinding
 
 class TanitimActivity : AppCompatActivity() {

@@ -1,8 +1,9 @@
-package com.example.cocuckeglence
+package com.example.cocuckeglence.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cocuckeglence.ui.adapter.KategorilerAdapter
 import com.example.cocuckeglence.data.entity.Kategoriler
 import com.example.cocuckeglence.databinding.ActivityMainBinding
 
